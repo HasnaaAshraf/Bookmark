@@ -1,0 +1,136 @@
+body{
+    background-color: #f7ecde;
+}
+
+.bookmarkerH1{
+    font-family: Pacifico, cursive;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding-top: 3rem ;
+    color: #352e28;
+}
+
+.bookmarkerH1::after{
+    content: "";
+    background-color: #fec260;
+    width: 260px;
+    height: 22%;
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    z-index: -5;
+    transition: 0.5s;
+}
+
+.bookmarkerH1:hover::after {
+    height: 35%;
+}
+
+.line{
+    border-bottom: 2px black dotted;
+    margin-top: 3.5rem;
+}
+
+.bookmarhH2{
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    background: linear-gradient( to right , #3ca55c, #d2c535);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+
+}
+  
+.form{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.submit{
+    background-color: #d1512d;
+    color: white;
+    margin-left: 42%;
+    margin-top: 10px;
+    margin-bottom: -25px;
+    padding: 5px 50px;  
+}
+
+.submit:hover{
+    background-color: #bb4120;
+    color: white;
+}
+
+.table{
+    width: 98%;
+    font-family:"PT Sans Caption", sans-serif ;
+}
+
+.table-sm>:not(caption){
+    margin-left: 0.5rem;
+    padding: 0;
+    text-align: center;
+}
+
+.table tr th {
+    color: #262a2e;
+   padding: 10px 0;
+}
+
+#visit{
+    background-color: #9eb23b;
+    color: white;
+}
+
+#visit:hover{
+    background-color:#8a9e23;
+    color: white;
+}
+
+.colorIcon{
+    margin-left: -24rem ;
+    padding-bottom: 2rem;
+}
+
+.colorIcon .i1{
+    color: #f15f5d;
+}
+
+.colorIcon .i2{
+    color: #febe2e;
+}
+
+.colorIcon .i3{
+    color: #4db748;
+}
+
+div:where(.swal2-container) button:where(.swal2-close) {
+    color: black !important;
+}
+
+.text{
+    text-align: left;   
+}
+
+.text .firstP{
+    width: 80%;
+    font-family: "Bree Serif", serif;
+    color:rgb(53, 46, 40);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.text p i {
+    color: #bb4120;
+}
+
+@media (max-width:800px){
+
+    .bookmarkerH1::after{
+        content: "";
+        width: 250px;
+    }
+
+}

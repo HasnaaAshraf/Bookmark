@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/2899445.png" type="image/x-icon">
+    <title>Bookmark</title>
+
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+   <script src="https://kit.fontawesome.com/9a2383c864.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styling.css">
+
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container ">
+
+    <h1 class="bookmarkerH1 w-25 text-center m-auto position-relative">Bookmarker</h1>
+
+      <div class="line "></div>
+
+      <h2 class="bookmarhH2 text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+
+      <div class="form mb-3">
+        <label for="siteName" class="form-label "> <i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+        <input oninput="validateForm(this);" type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+      </div>
+
+      <div class="form mb-3">
+        <label for="siteURL" class="form-label"> <i class="fa-solid fa-link me-2"></i> Site URL </label>
+        <input  oninput="validateForm(this);" type="url" class="form-control" id="siteURL" placeholder="Website URL">
+      </div>
+
+      <input onclick=" addNameUrl();" class="submit btn " type="button" value="Submit">
+
+      <div class="line "></div>
+
+      <div class="tableContainer">
+
+        <div id="rowData" class="row">
+
+          <table class="table table-sm ms-2 mt-4 ">
+            <thead>
+              <tr class="">
+                <th class="" scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th class="" scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tBody">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>  
+    
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <script src="js/index.js"></script>
+
+</body>
+</html>
